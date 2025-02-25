@@ -21,7 +21,7 @@ function solve(amount, bottles) {
             next = curr.slice(); 
             next[i] = 0; 
             enqueue(next, path, queue, visited); 
-            // pur water from one bottle to the other 
+            // pour water from one bottle to the other 
             for (let j = 0; j < bottles.length; j++) {
                 if (i != j) {
                     let next = curr.slice(); 
